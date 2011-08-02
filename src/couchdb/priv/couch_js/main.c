@@ -289,6 +289,7 @@ main(int argc, const char * argv[])
     if (!cx) return 1;
 
     JS_SetScriptStackQuota(cx, 0x20000000); 
+
     JS_SetErrorReporter(cx, printerror);
     JS_ToggleOptions(cx, JSOPTION_XML);
     
